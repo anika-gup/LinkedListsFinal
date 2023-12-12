@@ -2,14 +2,15 @@
 #define NODE_H
 
 #include "student.h"
-
+#include <iostream>
+using namespace std;
 class Node {
 public:
-    Node(Student*);
+    Node(Student* s);
     ~Node();
 
-    void setStudent(Student*);
-    void setNext(Node*);
+    void setStudent(Student* s);
+    void setNext(Node* n);
 
     Student* getStudent();
     Node* getNext();
