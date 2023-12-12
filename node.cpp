@@ -1,12 +1,15 @@
 #include "node.h"
-
+#include <iostream>
+#include <cstring>
+using namespace std;
 Node::Node(Student* s) : student(s), next(0) {}
-
+  //creating node, takes in a student pointer
 Node::~Node() {
     // Assuming proper memory management for Student objects is handled elsewhere
 }
 
 void Node::setStudent(Student* s) {
+    //not needed
     student = s;
 }
 
