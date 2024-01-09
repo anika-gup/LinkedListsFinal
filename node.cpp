@@ -6,6 +6,7 @@ Node::Node(Student* s) : student(s), next(0) {}
   //creating node, takes in a student pointer
 Node::~Node() {
     // Assuming proper memory management for Student objects is handled elsewhere
+  delete student;
 }
 
 void Node::setStudent(Student* s) {
